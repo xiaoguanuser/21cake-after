@@ -1,0 +1,37 @@
+@import "component/header.scss";
+@import "component/footer.scss";
+@import "component/reset.scss";
+*{margin:0;padding: 0;list-style: none;}
+.products{
+	margin-top: 80px;
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+	height: 800px;
+}
+ .box{
+ 	cursor: pointer;
+	float: left;
+	width: 200px;
+	height: 250px;
+	background: #ccc;
+	background: yellowgreen;
+	border:1px solid #ccc;
+}
+ .box img{
+ 	width: 200px;
+ 	height: 150px;
+ }
+.box li{
+	height: 200px;
+	margin: 6px 0;
+}
+.box p{
+	font-size: 14px;
+	padding: 6px 10px;
+	color: #724228;
+}
+.box a{
+	font-size: 14px;
+	margin:3px 10px;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>21Cake蛋糕官网</title>
+	<link rel="shortcut icon" href="/images/home/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+	<header></header>
+	<section>
+	<div class="banner" id="banner">
+		<ul>
+			<li class="ac" style="display: block;"><img src="/images/home/banner5 (2).jpg"></li>
+			<li><img src="/images/home/banner.jpg"></li>
+			<li><img src="/images/home/banner1.jpg"></li>
+			<li><img src="/images/home/banner2.jpg"></li>
+			<li><img src="/images/home/banner3.jpg"></li>
+		</ul>
+		<ol>
+			<li class="ac">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ol>
+		 <a href="javascript:;" id="goPrev">&laquo;</a>
+   		 <a href="javascript:;" id="goNext">&raquo;</a>
+	</div>
+	<!--中间内容-->
+	 <div class="home-menu">
+		<ul>
+			<li>
+				<a href="javascript:;"><img src="images/home/new1.1.png"></a>
+				<a href="javascript:;"><img src="images/home/birthday.png"></a>
+				<a href="javascript:;"><img src="images/home/children.png"></a>
+				<a href="javascript:;"><img src="images/home/juhui.png"></a>
+				<a href="javascript:;"><img src="images/home/huodong.png"></a>
+			</li>
+		</ul>
+	</div>
+		<!--1-->
+		<div class="home-top-anchor">
+		<h4  class="home-top-anchor-title">新品&nbsp;<span>/</span><span>专区</span></h4>
+		<div class="home-top-anchor-banner">
+			<a href="javascript:;" class="new"><img src="images/home/new1.jpg"></a>
+		</div>
+		<div class="project-list">
+		<div class="project-list-box" id="products">
+			<ul id="productList"></ul>
+				<script type="text/html" id="pro-template">
+				{{each products item i}}
+				<li>
+					<a href="/html/detail.html?id={{ item.id }}"><img src="{{ item.img }}"></a>
+					<h6>{{ item.title }}</h6>
+					<p><a href="javascript:;">{{ item.tit }}</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">新品></a>
+						<a href="javascript:;">人气></a>
+						<a href="javascript:;">生日></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">{{ item.price }}</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+		{{/each}}
+		</script>
+		</div>
+	</div>
+</div>
+<!--2-->
+<div class="home-top-anchor">
+		<h4  class="home-top-anchor-title">生日&nbsp;<span>/</span><span>专区</span></h4>
+		<div class="home-top-anchor-banner">
+			<a href="javascript:;" class="new"><img src="images/home/birthday1.jpg"></a>
+		</div>
+		<div class="project-list">
+		<div class="project-list-box">
+			<ul>
+				<li>
+					<a href="javascript:;"><img src="images/home/birthday1.1.png"></a>
+					<h6>百利甜情人</h6>
+					<p><a href="javascript:;">亲切的水果与刚折的玫瑰，甜美，渐浓</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">情侣></a>
+						<a href="javascript:;">人气></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/birthday1.2.png"></a>
+					<h6>榴莲飘飘</h6>
+					<a href="javascript:;"><p>丰富乳脂奶油，打入足量榴莲果肉</p></a>
+					<div class="tag-list">
+						<a href="javascript:;">人气></a>
+						<a href="javascript:;">生日></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/birthday1.3.png"></a>
+					<h6>黑白巧克力慕斯 彼德(生日)</h6>
+					<p><a href="javascript:;">卡通定制撒粉，简单，柔软</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">新品></a>
+						<a href="javascript:;">生日></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/birthday1.4.png"></a>
+					<h6>枣儿</h6>
+					<p><a href="javascript:;">红枣奶油，与姜撞奶慕斯</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">新品></a>
+						<a href="javascript:;">生日></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--3-->
+<div class="home-top-anchor">
+		<h4  class="home-top-anchor-title">儿童&nbsp;<span>/</span><span>专区</span></h4>
+		<div class="home-top-anchor-banner">
+			<a href="javascript:;" class="new"><img src="images/home/children1.jpg"></a>
+		</div>
+		<div class="project-list">
+		<div class="project-list-box">
+			<ul>
+				<li>
+					<a href="javascript:;"><img src="images/home/children-banner1.1.png"></a>
+					<h6>黑白巧克力慕斯 彼尔德(Party)</h6>
+					<p><a href="javascript:;">"孩子的世界，简单到非黑即白"</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">儿童></a>
+						<a href="javascript:;">新品></a>
+						<a href="javascript:;">相识></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/children-banner1.2.png"></a>
+					<h6>芒果奶油蛋糕</h6>
+					<a href="javascript:;"><p>21cake配方芒果百香果慕斯夹心</p></a>
+					<div class="tag-list">
+						<a href="javascript:;">情侣></a>
+						<a href="javascript:;">儿童></a>
+						<a href="javascript:;">聚会></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/children-banner1.3.png"></a>
+					<h6>百香果酸乳酪慕斯</h6>
+					<p><a href="javascript:;">冰激凌口感，不同层次的酸与冰凉</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">情侣></a>
+						<a href="javascript:;">低温></a>
+						<a href="javascript:;">新品></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/children-banner1.4.png"></a>
+					<h6>星语心愿</h6>
+					<p><a href="javascript:;">椰子香气，与青柠酸乳酪夹心</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">情侣></a>
+						<a href="javascript:;">生日></a>
+						<a href="javascript:;">儿童></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--4-->
+<div class="home-top-anchor">
+		<h4  class="home-top-anchor-title">聚会&nbsp;<span>/</span><span>专区</span></h4>
+		<div class="home-top-anchor-banner">
+			<a href="javascript:;" class="new"><img src="images/home/part.jpg"></a>
+		</div>
+		<div class="project-list">
+		<div class="project-list-box">
+			<ul>
+				<li>
+					<a href="javascript:;"><img src="images/home/part1.1.png"></a>
+					<h6>6口味切块</h6>
+					<p><a href="javascript:;">多口味，精装小份</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">聚会></a>
+						<a href="javascript:;">新品></a>
+						<a href="javascript:;">人气></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/part1.2.png"></a>
+					<h6>黑白巧克力慕斯</h6>
+					<a href="javascript:;"><p>白巧克力慕斯的甜，与黑巧克力慕斯的苦</p></a>
+					<div class="tag-list">
+						<a href="javascript:;">聚会></a>
+						<a href="javascript:;">生日></a>
+						<a href="javascript:;">人气></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/part1.3.png"></a>
+					<h6>朗姆芝士</h6>
+					<p><a href="javascript:;">清香柠檬与乳络夹心，微苦，微醺</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">情侣></a>
+						<a href="javascript:;">白色情人节></a>
+						<a href="javascript:;">相识></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="images/home/part1.4.png"></a>
+					<h6>冻慕斯与芝士</h6>
+					<p><a href="javascript:;">马斯卡彭慕斯，叠加法国软芝士</a></p>
+					<div class="tag-list">
+						<a href="javascript:;">情侣></a>
+						<a href="javascript:;">低温></a>
+						<a href="javascript:;">生日></a>
+					</div>
+					<div class="cart-info">
+						<span class="spec">￥298/2.0磅</span>
+						<a href="javascript:;" class="add-card">加入购物车</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--活动门部分-->
+<div class="home-bottom-anchor">
+		<h4  class="home-bottom-anchor-title">活动门&nbsp;<span>/</span><span>是被吸引了吧</span><span>查看更多>></span></h4>
+		<div class="home-bottom-anchor-banner">
+			<a href="javascript:;" class="new"><img src="images/home/hot.jpg"></a>
+		</div>
+		
+</div>
+<!--廿一-->
+<div class="home-bottom-anchor-magazine">
+	<h4 class="home-bottom-anchor-magazine-title">廿一客&nbsp;<span>/</span><span>文章</span></h4>
+	<ul>
+		<li>
+			<a href="javascript:;"><img src="images/home/f.jpg"/>
+			<h4>廿一志-周年庆</h4>
+			<p>
+				<span>阅读全文>></span>
+			</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="images/home/f1.jpg"/>
+			<h4>廿一志秋刊.客服Q7A</h4>
+			<p>
+				<span>阅读全文>></span>
+			</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+</section>
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/index.js"></script>
+</body>
+</html>

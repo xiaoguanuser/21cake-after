@@ -1,0 +1,28 @@
+@import "component/header.scss";
+@import "component/footer.scss";
+@import "component/reset.scss";
+#container{
+	height: 200px;
+	background: yellowgreen;
+}
+.product{
+	padding:10px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	}
+	img{
+	text-align: center;
+	width: 75%;
+	height: 75%;
+	}
+	.product .add-to-cart{
+	cursor: pointer;
+	border:1px solid #000;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	}
+

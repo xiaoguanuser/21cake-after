@@ -1,0 +1,102 @@
+$color:#333;
+$max-width:1200px;
+$min-width:700px;
+.footer{
+	height: 382px;
+	background: $color;
+	&-box{
+		height: 382px;
+		margin:0 auto;
+		color: #9a9a9a;
+		font-size: 12px;
+		text-align:center;
+			&-logo{
+				width: 96px;
+				height: 36px;
+				margin-top: 30px;
+			}
+			&-nav{
+				color: white;
+				height: 50px;
+				text-align:center;
+				padding: 25px 0;
+				margin-left: 215px;
+				li{
+					line-height: 50px;
+				}
+				a{
+					float: left;
+					display: inline-block;
+					color: white;
+					height: 14px;
+					line-height: 14px;
+					padding: 0 56px;
+					border-right: 1px solid white;
+				}
+			}
+			&-icon{
+					text-align:center;
+				a{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					border-radius: 25px;
+					background: #494949;
+					margin: 0 25px;
+					color: white;
+					font-size:16px;
+					a:hover{
+						color:white;
+					}
+				}
+					img{
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						text-align:center;
+						vertical-align: middle;
+					}
+				}
+				&-text{
+					padding: 10px 0;
+					span{
+						line-height: 18px;
+					}
+				}
+						&-copyright{
+							border-top: 1px solid #9a9a9a;
+							padding: 15px 0;
+								span{
+									color:#9a9a9a;
+								}
+								a{
+									color:#9a9a9a;
+								}
+						}
+					}
+
+		}
+.img-size{
+	float: left;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	img{
+		width: 100px;
+		height: 100px;
+		box-shadow: 1px 0px 6px white;
+		border:8px solid white;
+	}
+}
+
+#erweima{
+		display: none;
+	    margin-left: -52px;
+   		margin-top: -153px;
+}
+#footer-erweima{
+	display: none;
+	margin-left: 55px;
+	margin-top: -153px
+}

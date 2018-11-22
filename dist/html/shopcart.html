@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>21Cake蛋糕官网</title>
+	<link rel="shortcut icon" href="/images/home/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/shopcart.css">
+</head>
+<body>
+	<header></header>
+	<div class="content">
+		<div class="content-box">
+			<!-- 购物车为空的状态 -->
+			<div class="cart-empty">
+				<img src="/images/cart/cartempty.png">
+				<h5>您的购物车还没有商品</h5>
+				<h6><a href="http://localhost:1000/html/detail.html?id=2">去购物>></a></h6>
+			</div>
+			<!-- 购物车 -->
+			<div class="cart-not-empty">
+				<table class=".cart-empty">
+					<!-- 头部 -->
+					<thead>
+						<tr>
+							<th class="allchoose"><label><input type="checkbox" name="" class="ck_all">&nbsp;全选</label></th>
+							<th>商品</th>
+							<th>生日牌</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>金额</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<!-- 中间内容 -->
+					<tbody class="cart_body" id="prod"></tbody>
+					<script type="text/html" id="shopcart-template">
+						{{ each products item i}}
+					<tr id="tr" data-id="{{item.id}}">
+						<td class="ck"><label><input type="checkbox" class="ck_sig"></label></td>
+						<td class="goods-img"><a href="javascript:;"><img src="{{item.img}}"></a></td>
+						<td class="goods-cake">
+							<div>
+								<h4>{{item.title}}</h4>
+								<span class="goods-spec">规格<span>&nbsp;2.0磅</span></span>
+								<span><i></i>赠送10套餐具</span>
+							</div>
+						</td>
+						<td class="select-birthday">
+							<div class="select-birthday-list">
+								<input type="text" name="" placeholder="请选择生日牌" class="choose-card"/>
+								<i></i>
+							</div>
+							<ul class="birthday-options">
+								<li>生日快乐</li>
+								<li>Happy Birthd</li>
+								<li>节日快乐</li>
+								<li>自定义</li>
+							</ul>
+						</td>
+						<td class="cart-price">{{item.price}}</td>
+						<td class="amount">
+							<div class="number">
+								<input type="button" name="" class="reduce" id="reduce">
+								<input type="text" name="" class="txt" id="amount"value="{{item.amount}}"/>
+								<input type="button" name="" class="add" id="add">
+							</div>
+						</td>
+						<td class="money" id="money">{{item.price*item.amount}}</td>
+						<td class="del"><i></i></td>
+						</tr>
+						{{/each}}
+						</script>
+				</table>
+				<!-- 结算部分 -->
+				<div class="cart-area">
+						<a href="javascript:;" class="cart-submit-empty"><i class="delete"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全部清空</a>
+						<ul class="detail-cart-total">
+							<li class="all">商品金额：￥ <span class="allPri">0.00</span></li>
+							<li>配送费：￥ 0.00</li>
+							<li>活动优惠：￥ 0.00</li>
+							<li class="card-total"><span>合计：￥</span><span class="pri">0.00</span>
+							<span>订单已经满100元，享免费配送服务</span>
+							</li>
+						</ul>
+						<div class="detail-cart-button"><a href="/html/login.html">去结算</a></div>
+					</div>
+				</div>
+		</div>
+		<!-- 商品推荐 -->
+			<div class="details-recommend">
+				<h3>商品推荐</h3>
+				<ul class="recommend-list">
+					<li><a href="javascript:;"><img src="/images/cart/pro1.jpg"></a></li>
+					<li><a href="javascript:;"><img src="/images/cart/pro2.jpg"></a></li>
+					<li><a href="javascript:;"><img src="/images/cart/pro3.jpg"></a></li>
+					<li><a href="javascript:;"><img src="/images/cart/pro4.jpg"></a></li>
+				</ul>
+		 </div>
+	</div>
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/shopcart.js"></script>
+	
+</body>
+</html>

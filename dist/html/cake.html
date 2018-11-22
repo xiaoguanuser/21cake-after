@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" href="/images/home/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/css/cake.css">
+</head>
+<body>
+	<header></header>
+	<div id="products" class="products">
+	 <ul id="proList"></ul>
+	<script type="text/html" id="pro-template">
+		{{ each products }}
+		<li class="box">
+			<div class="pic"><img src="{{ $value.img }}"></div>
+			<p class="price">￥{{ $value.price }}/2.0磅</p>
+			<p class="name">{{ $value.name }}</p>
+			<a href="/html/detail.html?id={{ $value.id }}">查看详情>></a>
+		</li>
+		{{/each}}
+		
+	</script>
+	</div>
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/cake.js"></script>
+</body>
+</html>
